@@ -1,6 +1,9 @@
 //	Check how much disk space a device actually has. This is
 //	done by creating a large file and then writing and reading
 //	specific patterns to verify data made it to the device
+//
+//	License: MIT. See the LICENSE file in the project root for more details.
+//
 
 #include <Windows.h>
 #include <stdio.h>
@@ -583,4 +586,5 @@ int main (int argc, char** argv)
 
 	//	All done!
 	return returnStatus;
+
 }
