@@ -2,7 +2,7 @@
 Utilities for determining the actual capacity of a USB drive.
 
 ## Background
-I came across a couple of high capacity USB drives, online, that were inexpensive - $25 each. The drives were 30 TB, 128 TB and 256 TB. As much I can dream of owning 1 PB of disk space for ~$200, I understood going in that these drives would be fakes. I wanted to find out what the exact capacity of these drives were, how they failed and whether I could use them to their true capacity.
+I came across a few high capacity USB drives, online, that were inexpensive - $25 each. The drives were 30 TB, 128 TB and 256 TB. As much I can dream of owning 1 PB of disk space for ~$200, I understood going in that these drives would be fakes. I wanted to find out what the exact capacity of these drives were, how they failed and whether I could use them to their true capacity.
 
 ## The Drives
 Here's a picture of the 30 TB, 128 TB and a 128 GB control drive I used for testing:
@@ -207,19 +207,19 @@ The Visual Studio 2022 projects are included in the src/maxspace and src/spacech
 ## How to Run the spacechk Utility
 The spacechk utility can be run from a regular Windows Command Prompt. Just running the command without any options will display a list of command line options. Options can be combined, but I ran the tests as follows (file creation):
 
-  spacechk -create e:\
+       spacechk -create e:\
 
 Then verification:
 
-  spacechk -verify e:\
+       spacechk -verify e:\
 
 And finally deletion:
 
-  spacechk -delete e:\
+       spacechk -delete e:\
 
 I could have run:
 
-  spacechk -create -verify -delete e:\
+       spacechk -create -verify -delete e:\
 
 But, I was still tweaking the code and running separate commands was useful.
 
@@ -230,11 +230,11 @@ The maxspace utility needs an elevated Windows Command Prompt. This means you ha
 
 The utility can be run one of two ways. The default command line just needs the drive of the USB device which will bypass the Windows file system cache:
 
-  maxspace e:\
+       maxspace e:\
 
 To use the file system cache:
 
-  maxspace -cache e:\
+       maxspace -cache e:\
 
 The utility has a -stats option which will output the sector size, number of clusters, total space and available space of the drive.
 
