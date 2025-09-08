@@ -3,6 +3,8 @@
 //	is no more space on the disk, and then reading the files back
 //	to verify the data was actually written
 //
+//	License: MIT. See the LICENSE file in the project root for more details.
+//
 
 #include <Windows.h>
 #include <stdio.h>
@@ -612,4 +614,5 @@ int main (int argc, char** argv)
 
 	//	All done!
 	return 0;
+
 }
